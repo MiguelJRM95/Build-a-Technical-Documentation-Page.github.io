@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Node.js Introduction - Build a Technical Documentation Page</title>
+</head>
+<body>
+    <header id="header-doc">
+        <h1>Introduction to Node.js</h1>
+        <p>JavaScript on the server</p>
+    </header>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>
+                <h1>Learning Path</h1>
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction_to_Node.js">Introduction to Node.js</a></li>
+                <li><a class="nav-link" href="#A_brief_history_of_Node.js">A brief history of Node.js</a></li>
+                <li><a class="nav-link" href="#How_to_install_Node.js">How to install Node.js</a></li>
+                <li><a class="nav-link" href="#How_much_JavaScript_do_you_need_to_know_to_use_Node.js">How much JavaScript do you need to know to use Node.js</a></li>
+                <li><a class="nav-link" href="#Differences_between_Node.js_and_the_Browser">Differences between Node.js and the Browser</a></li>
+            </ul>
+        </nav>
+
+        <div id="doc-sections">
+            <section class="main-section" id="Introduction_to_Node.js">
+                <header>
+                    <h1>Introduction to Node.js</h1>
+                </header>
+                <br>
+                <p>
+                    Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!
+                    <br>
+                    <br>
+                    Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+                    <br>
+                    <br>
+                    A Node.js app is run in a single process, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives in its standard library that prevent JavaScript code from blocking and generally, libraries in Node.js are written using non-blocking paradigms, making blocking behavior the exception rather than the norm.
+                    <br>
+                    <br>
+                    When Node.js performs an I/O operation, like reading from the network, accessing a database or the filesystem, instead of blocking the thread and wasting CPU cycles waiting, Node.js will resume the operations when the response comes back.
+                    <br>
+                    <br>
+                    This allows Node.js to handle thousands of concurrent connections with a single server without introducing the burden of managing thread concurrency, which could be a significant source of bugs.
+                    <br>
+                    <br>
+                    Node.js has a unique advantage because millions of frontend developers that write JavaScript for the browser are now able to write the server-side code in addition to the client-side code without the need to learn a completely different language.
+                    <br>
+                    <br>
+                    In Node.js the new ECMAScript standards can be used without problems, as you don't have to wait for all your users to update their browsers - you are in charge of deciding which ECMAScript version to use by changing the Node.js version, and you can also enable specific experimental features by running Node.js with flags.
+                </p>
+                <br>
+                <br>
+                <br>
+                <header>
+                    <h1>
+                        Node.js Frameworks and Tools
+                    </h1>
+                </header>
+                <br>
+                <p>
+                    Node.js is a low-level platform. In order to make things easy and exciting for developers, thousands of libraries were built upon Node.js by the community.
+
+                    Many of those established over time as popular options. Here is a non-comprehensive list of the ones worth learning:
+                </p>
+                <br>
+                <br>
+                <ul id="framework-list">
+                    <li>
+                        AdonisJs: A full-stack framework highly focused on developer ergonomics, stability, and confidence. Adonis is one of the fastest Node.js web frameworks.
+                    </li>
+                    <br>
+                    <li>
+                        Express: It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
+                    </li>
+                    <br>
+                    <li>
+                        Fastify: A web framework highly focused on providing the best developer experience with the least overhead and a powerful plugin architecture. Fastify is one of the fastest Node.js web frameworks.
+                    </li>
+                    <br>
+                    <li>
+                        hapi: A rich framework for building applications and services that enables developers to focus on writing reusable application logic instead of spending time building infrastructure.
+                    </li>
+                    <br>
+                    <li>
+                        koa: It is built by the same team behind Express, aims to be even simpler and smaller, building on top of years of knowledge. The new project born out of the need to create incompatible changes without disrupting the existing community.
+                    </li>
+                    <br>
+                    <li>
+                        Loopback.io: Makes it easy to build modern applications that require complex integrations.
+                    </li>
+                    <br>
+                    <li>
+                        Meteor: An incredibly powerful full-stack framework, powering you with an isomorphic approach to building apps with JavaScript, sharing code on the client and the server. Once an off-the-shelf tool that provided everything, now integrates with frontend libs React, Vue, and Angular. Can be used to create mobile apps as well.
+                    </li>
+                    <br>
+                    <li>
+                        Micro: It provides a very lightweight server to create asynchronous HTTP microservices.
+                    </li>
+                    <br>
+                    <li>
+                        NestJS: A TypeScript based progressive Node.js framework for building enterprise-grade efficient, reliable and scalable server-side applications.
+                    </li>
+                    <br>
+                    <li>
+                        Next.js: A framework to render server-side rendered React applications.
+                    </li>
+                    <br>
+                    <li>
+                        Nx: A toolkit for full-stack monorepo development using NestJS, Express, React, Angular, and more! Nx helps scale your development from one team building one application to many teams collaborating on multiple applications!
+                    </li>
+                    <br>
+                    <li>
+                        Socket.io: A real-time communication engine to build network applications.
+                    </li>
+                </ul>
+            </section>
+            <br>
+            <br>
+            <br>
+            <section class="main-section" id="A_brief_history_of_Node.js">
+                <header>
+                    <h1>A brief history of Node.js</h1>
+                </header>
+                <br>
+                <p>
+                    Believe it or not, Node.js is only ten years old.
+                    <br>
+                    <br>
+                    In comparison, JavaScript is 24 years old and the Web is 30 years old.
+                    <br>
+                    <br>
+                    Ten years isn't a very long time in tech, but Node.js seems to have been around forever.
+                    <br>
+                    <br>
+                    I've had the pleasure to work with Node.js since the early days when it was only 2 years old, and despite the limited information in the wild, you could already feel that it was going to be a huge thing.
+                    <br>
+                    <br>
+                    In this post, we draw the big picture of Node.js in its history, to put things in perspective.
+                </p>
+                <br>
+                <br>
+                <h2>A little bit of history</h2>
+                <br>
+                <p>
+                    JavaScript is a programming language that was created at Netscape as a scripting tool to manipulate web pages inside their browser, Netscape Navigator.
+                    <br>
+                    <br>
+                    Part of the business model of Netscape was to sell Web Servers, which included an environment called Netscape LiveWire that could create dynamic pages using server-side JavaScript. Unfortunately, Netscape LiveWire wasn't very successful and server-side JavaScript wasn't popularized until recently, by the introduction of Node.js.
+                    <br>
+                    <br>
+                    One key factor that led to the rise of Node.js was the timing. Just a few years earlier, JavaScript had started to be considered as a more serious language, thanks to "Web 2.0" applications (such as Flickr, Gmail, etc.) that showed the world what a modern experience on the web could be like.
+                    <br>
+                    <br>
+                    JavaScript engines also became considerably better as many browsers competed to offer users the best performance. Development teams behind major browsers worked hard to offer better support for JavaScript and find ways to make JavaScript run faster. The engine that Node.js uses under the hood, V8 (also known as Chrome V8 for being the open-source JavaScript engine of The Chromium Project), improved significantly due to this competition.
+                    <br>
+                    <br>
+                    Node.js happened to be built in the right place and right time, but luck isn't the only reason why it is popular today. It introduces a lot of innovative thinking and approaches for JavaScript server-side development that has already helped many developers.
+                </p>
+                
+            </section>
+            <br>
+            <br>
+            <br>
+            <section class="main-section" id="How_to_install_Node.js">
+                <header>
+                    <h1>How to install Node.js</h1>
+                </header>
+                <br>
+                <br>
+                <p>
+                    Node.js can be installed in different ways. This post highlights the most common and convenient ones.
+                    <br>
+                    <br>
+                    Official packages for all the major platforms are available at <a href=" https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>.
+                    <br>
+                    <br>
+                    One very convenient way to install Node.js is through a package manager. In this case, every operating system has its own.
+                    <br>
+                    <br>
+                    On macOS, Homebrew is the de-facto standard, and - once installed - allows to install Node.js very easily, by running this command in the CLI:
+                </p>
+                <br>
+                <code>
+                    brew install node
+                </code>
+                <code>
+                    brew install node
+                </code>
+                <code>
+                    brew install node
+                </code>
+                <code>
+                    brew install node
+                </code>
+                <code>
+                    brew install node
+                </code>
+                <br>
+                <br>
+            </section>
+
+            <section class="main-section" id="How_much_JavaScript_do_you_need_to_know_to_use_Node.js">
+                <header>
+                    <h1>How much JavaScript do you need to know to use Node.js</h1>
+                </header>
+                <br>
+                <br>
+                <p>
+                    As a beginner, it's hard to get to a point where you are confident enough in your programming abilities.
+                </p>
+                <br>
+                <p>
+                    While learning to code, you might also be confused at where does JavaScript end, and where Node.js begins, and vice versa.
+                </p>
+                <br>
+                <p>
+                    I would recommend you to have a good grasp of the main JavaScript concepts before diving into Node.js: 
+                </p>
+                <br>
+                <ul>
+                    <li>Lexical Structure</li>
+                    <li>Expressions</li>
+                    <li>Types</li>
+                    <li>Variables</li>
+                    <li>Functions</li>
+                    <li>this</li>
+                    <li>Arrow Functions</li>
+                    <li>Loops</li>
+                    <li>Scopes</li>
+                    <li>Arrays</li>
+                    <li>Template Literals</li>
+                    <li>Semicolons</li>
+                    <li>Strict Mode</li>
+                    <li>ECMAScript 6, 2016, 2017</li>
+                </ul>
+                <br>
+                <br>
+                <p>
+                    With those concepts in mind, you are well on your road to become a proficient JavaScript developer, in both the browser and in Node.js. 
+                </p>
+                <br>
+                <p>
+                    The following concepts are also key to understand asynchronous programming, which is one fundamental part of Node.js:
+                </p>
+                <br>
+                <ul>
+                    <li>Asynchronous programming and callbacks</li>
+                    <li>Timers</li>
+                    <li>Promises</li>
+                    <li>Async and Await</li>
+                    <li>Closures</li>
+                    <li>The Event Loop</li>
+                </ul>
+            </section>
+            <br>
+            <br>
+            <br>
+            <section class="main-section" id="Differences_between_Node.js_and_the_Browser">
+                <header>
+                    <h1>Differences between Node.js and the Browser</h1>
+                </header>
+                <p>
+                    Both the browser and Node.js use JavaScript as their programming language.
+                    <br>
+                    <br>
+                    Building apps that run in the browser is a completely different thing than building a Node.js application.
+                    <br>
+                    <br>
+                    Despite the fact that it's always JavaScript, there are some key differences that make the experience radically different.
+                    <br>
+                    <br>
+                    From the perspective of a frontend developer who extensively uses JavaScript, Node.js apps bring with them a huge advantage: the comfort of programming everything - the frontend and the backend - in a single language.
+                    <br>
+                    <br>
+                    You have a huge opportunity because we know how hard it is to fully, deeply learn a programming language, and by using the same language to perform all your work on the web - both on the client and on the server, you're in a unique position of advantage.
+                    <br>
+                    <br>
+                    What changes is the ecosystem.
+                    <br>
+                    <br>
+                    In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node.js, of course. You don't have the document, window and all the other objects that are provided by the browser.
+                    <br>
+                    <br>
+                    And in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+                    <br>
+                    <br>
+                    Another big difference is that in Node.js you control the environment. Unless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on. Compared to the browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convenient.
+                    <br>
+                    <br>
+                    This means that you can write all the modern ES6-7-8-9 JavaScript that your Node.js version supports.
+                    <br>
+                    <br>
+                    Since JavaScript moves so fast, but browsers can be a bit slow and users a bit slow to upgrade, sometimes on the web, you are stuck with using older JavaScript / ECMAScript releases.
+                    <br>
+                    <br>
+                    You can use Babel to transform your code to be ES5-compatible before shipping it to the browser, but in Node.js, you won't need that.
+                    <br>
+                    <br>
+                    Another difference is that Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
+                    
+                    In practice, this means that for the time being you use require() in Node.js and import in the browser.
+                </p>
+            </section>
+        </div>
+
+    </main>
+    <footer id="footer-doc">
+            <p>&copy; Miguel José Rodríguez Martínez - Project for FreeCodeCamp Responsive Web Design Certification</p>
+            <a  id="github" href="https://github.com/MiguelJRM95" target="_blank" >GitHub</a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
